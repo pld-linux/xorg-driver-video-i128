@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Number 9 I128 video adapters
 Summary(pl):	Sterownik obrazu X.org dla kart graficznych Number 9 I128
 Name:		xorg-driver-video-i128
-Version:	1.1.0.2
+Version:	1.1.0.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-i128-%{version}.tar.bz2
-# Source0-md5:	1926225d423d77611df203d174e7adbd
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-i128-%{version}.tar.bz2
+# Source0-md5:	948830669e1d3d418838b21aab600c21
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -17,7 +17,7 @@ BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,8 +49,7 @@ I128-II, I128-T2R (Ticket 2 Ride), I128-T2R4 (Ticket 2 Ride IV).
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -61,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/i128_drv.so
-%{_mandir}/man4/i128.4x*
+%{_mandir}/man4/i128.4*
