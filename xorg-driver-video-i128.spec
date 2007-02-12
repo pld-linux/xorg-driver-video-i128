@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Number 9 I128 video adapters
-Summary(pl):	Sterownik obrazu X.org dla kart graficznych Number 9 I128
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla kart graficznych Number 9 I128
 Name:		xorg-driver-video-i128
 Version:	1.2.1
 Release:	1
@@ -27,9 +27,9 @@ X.org video driver for Number 9 I128 video adapters. It supports PCI
 and AGP video cards based on the following I128 chips: I128 rev 1,
 I128-II, I128-T2R (Ticket 2 Ride), I128-T2R4 (Ticket 2 Ride IV).
 
-%description -l pl
-Sterownik obrazu X.org dla kart graficznych Number 9 I128. Obs³uguje
-karty PCI i AGP oparte na nastêpuj±cych uk³adach I128: I128 rev 1,
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla kart graficznych Number 9 I128. ObsÅ‚uguje
+karty PCI i AGP oparte na nastÄ™pujÄ…cych ukÅ‚adach I128: I128 rev 1,
 I128-II, I128-T2R (Ticket 2 Ride), I128-T2R4 (Ticket 2 Ride IV).
 
 %prep
