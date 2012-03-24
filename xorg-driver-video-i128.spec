@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Number 9 I128 video adapters
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych Number 9 I128
 Name:		xorg-driver-video-i128
-Version:	1.3.4
-Release:	6
+Version:	1.3.5
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-i128-%{version}.tar.bz2
-# Source0-md5:	103316abb2dc466219c027afc5a71691
+# Source0-md5:	392c4ffd3c752af6f92e71e1efd68c66
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
